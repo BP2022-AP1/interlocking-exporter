@@ -8,14 +8,14 @@ packages = [{include = "interlocking_exporter"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-yaramo = {git = "https://github.com/simulate-digital-rail/yaramo"}
-railway-route-generator = {git = "https://github.com/simulate-digital-rail/railway-route-generator.git"}
-vacancy-section-generator = {git = "https://github.com/simulate-digital-rail/vacancy-section-generator.git"}
+yaramo = {git = "https://github.com/antonykamp/yaramo", branch="refactor/replace-connected-nodes-with-edges"}
+railway-route-generator = {git = "https://github.com/antonykamp/railway-route-generator.git", branch="refactor/replace-connected-nodes-edges"}
+vacancy-section-generator = {git = "https://github.com/antonykamp/vacancy-section-generator.git", branch="refactor/replace-connected-nodes-edges"}
 
 
 [tool.poetry.group.dev.dependencies]
-cli-importer = {git = "https://github.com/simulate-digital-rail/cli-importer"}
-orm-importer = {git = "https://github.com/simulate-digital-rail/orm-importer.git"}
+cli-importer = {git = "https://github.com/antonykamp/cli-importer", branch="refactor/replace-connected-nodes-edges"}
+orm-importer = {git = "https://github.com/antonykamp/orm-importer.git", branch="refactor/replace-connected-nodes-edges"}
 websockets = "^10.4"
 
 [build-system]
